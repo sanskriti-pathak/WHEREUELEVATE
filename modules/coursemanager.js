@@ -16,3 +16,27 @@ export default class CourseManager {
             return 0;
         }
     }
+
+    isCourseAvailable(courseName) {
+        try {
+            if (typeof courseName !== 'string') {
+                throw new Error('Course name should be a string');
+            }
+            return courseName in this.courses;
+        } catch (error) {
+            console.error(`Error in isCourseAvailable: ${error.message}`);
+            return false;
+        }
+    }
+
+    getHOD(courseName) {
+        try {
+            if (typeof courseName !== 'string') {
+                throw new Error('Course name should be a string');
+            }
+            return this.courses[courseName]?.hod || 'Course not found';
+        } catch (error) {
+            console.error(`Error in getHOD: ${error.message}`);
+            return 'Error retrieving HOD';
+        }
+    }
