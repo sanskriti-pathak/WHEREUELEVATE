@@ -144,3 +144,22 @@ a:hover {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #91f307;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 5px;
+}
