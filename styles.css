@@ -46,3 +46,9 @@ h2 {
 h3, h4 {
     font-size: 1.4em;
 }
+
+p, ol, ul {
+    margin: 20px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
