@@ -37,3 +37,8 @@ h2, h3, h4, h5 {
     margin-bottom: 10px;
     font-size: 1.8em;
 }
+
+h2 {
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 10px;
+}
