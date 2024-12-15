@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: url('future.jpg');
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: var(--blue);
+}
