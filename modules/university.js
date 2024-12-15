@@ -4,3 +4,9 @@ export default class University {
         this.studentsCount = data.university.studentsCount;
         this.isCollegeOpen = data.university.isCollegeOpen;
     }
+
+    displayInfo() {
+        console.log(`Welcome to ${this.name}`);
+        console.log(`Total Students: ${this.studentsCount}`);
+        console.log(`College Open: ${this.isCollegeOpen}`);
+    }
