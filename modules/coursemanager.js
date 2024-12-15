@@ -40,3 +40,25 @@ export default class CourseManager {
             return 'Error retrieving HOD';
         }
     }
+
+    displayAllCourses() {
+        try {
+            Object.values(this.courses).forEach(course => course.displayDetails());
+        } catch (error) {
+            console.error(`Error in displayAllCourses: ${error.message}`);
+        }
+    }
+
+    findCourse(courseName) {
+        try {
+            if (typeof courseName !== 'string') {
+                throw new Error('Course name should be a string');
+            }
+            return this.courses[courseName]
+                ? `Course found: ${this.courses[courseName].name} with ${this.courses[courseName].students} students`
+                : 'Course not found';
+        } catch (error) {
+            console.error(`Error in findCourse: ${error.message}`);
+            return 'Error finding course';
+        }
+    }
