@@ -42,3 +42,15 @@ export const defaultData = {
         }
     }
 };
+
+export const loadData = () => {
+    const storedData = localStorage.getItem('universityData');
+    if (storedData) {
+        return JSON.parse(storedData);  
+    }
+    return defaultData;
+};
+
+export const saveData = (data) => {
+    localStorage.setItem('universityData', JSON.stringify(data));  
+};
