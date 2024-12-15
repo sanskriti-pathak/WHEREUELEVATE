@@ -52,3 +52,11 @@ p, ol, ul {
     font-size: 1.2em;
     line-height: 1.6;
 }
+
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
