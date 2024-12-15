@@ -62,3 +62,15 @@ export default class CourseManager {
             return 'Error finding course';
         }
     }
+
+    addCourse(newCourseData) {
+        try {
+            const newCourse = new Course(newCourseData);
+            this.courses[newCourse.name] = newCourse;
+            return `Course ${newCourse.name} added with ${newCourse.students} students`;
+        } catch (error) {
+            console.error(`Error in addCourse: ${error.message}`);
+            return 'Error adding course';
+        }
+    }
+}
