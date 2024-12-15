@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
+    height: 135vh;
     background: url('future.jpg');
     background-size: cover;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #747406;
     background-color: var(--blue);
 }
 
 .content {
     background-color: rgba(0, 0, 0, 0.6);  
-    padding: 25px;
+    padding: 30px;
     border-radius: 10px;
     width: 90%;
     max-width: 700px;
