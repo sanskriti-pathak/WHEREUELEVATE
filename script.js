@@ -19,7 +19,7 @@ updateWelcomeMessage();
 addCourseRow('New Course', 100);
 
 const newCourseData = {
-    name: 'MTech',
+    name: 'M.Tech',
     duration: '2 Years',
     fee: 90000,
     students: 400,
