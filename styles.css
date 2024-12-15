@@ -10,3 +10,14 @@ body {
     color: #ffffff;
     background-color: var(--blue);
 }
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);  
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); 
+}
