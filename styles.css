@@ -60,3 +60,11 @@ ul.a {
 ul.b {
     list-style-type: square;
 }
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
