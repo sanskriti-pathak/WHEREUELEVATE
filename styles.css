@@ -182,3 +182,55 @@ a:hover {
         width: 100%;
     }
 }
+
+:root {
+    --blue: #6495ed; 
+    --white: #faf0e6; 
+}
+
+#coursesList {
+    list-style: none;
+    padding: 0;
+}
+
+#coursesList li {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#coursesList li:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #91f307;
+}
+
+.container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+}
+
+button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
