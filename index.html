@@ -14,7 +14,7 @@
 
         <h2>VARIOUS CAREER OPPORTUNITIES IN OUR COLLEGE</h2>
         <h3>Engineering Courses:</h3>
-        <p>B.Tech, M.Tech, BCA, MCA</p>
+        <p id="ele">B.Tech, M.Tech, BCA, MCA</p>
 
         <h3>Medical Courses:</h3>
         <p>B.sc Nursing, BAMS</p>
@@ -76,6 +76,34 @@
             <input type="email" name="email" id="email"><br>
             <input type="submit" value="submit">
         </form>
-    </div>          
+    </div>    
+    
+    <script type="module">
+        import { University } from './university.js';
+        import { Course } from './course.js';
+        import { CourseManager } from './courseManager.js';
+        import * as UI from './ui.js';
+        import * as Data from './data.js';
+
+        const courses = {
+            BTech: new Course("B.Tech", "4 Years", 70000, 1500, "Dr. Abhishek Saxena"),
+            BCA: new Course("B.C.A", "3 Years", 35000, 700, "Mr. Sachin Raj Saxena"),
+            MCA: new Course("M.C.A", "2 Years", 45000, 650, "Mr. Sachin Raj Saxena"),
+            BPharma: new Course("B.Pharma", "4 Years", 110000, 1800, "Dr. Rahul Shukla"),
+            MBA: new Course("MBA", "2 Years", 50000, 500, "Mr. Virendra")
+        };
+
+        const university = new University("Future University", 1500, true);
+
+        const courseManager = new CourseManager(courses);
+
+        university.displayInfo();
+        courseManager.displayAllCourses();
+        UI.populateCoursesList(courses);
+
+        document.getElementById('infoForm').addEventListener('submit', UI.handleFormSubmit);
+
+        UI.updateWelcomeMessage();
+    </script>
 </body>
 </html>
